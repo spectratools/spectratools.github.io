@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>localStorage manager</title>
+    <meta property="og:title" content="localStorage manager"/>
+    <meta name="twitter:title" content="localStorage manager"/>
+    <meta name="description" content="Add, edit, and delete stuff locally stored in your browser using localStorage by this website in case it got corrupted or something."/>
+    <meta property="og:description" content="Add, edit, and delete stuff locally stored in your browser using localStorage by this website in case it got corrupted or something."/>
+    <meta name="twitter:description" content="Add, edit, and delete stuff locally stored in your browser using localStorage by this website in case it got corrupted or something."/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../sheep2.css">
+    <link rel="stylesheet" href="material_ripple.css">
+    <link rel="stylesheet" href="jsoneditor.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../../sheep2.js" charset="utf-8"></script>
+    <script src="material_ripple.js" charset="utf-8"></script>
+    <script src="jsoneditor.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="list">
+      <div class="controls">
+        <a class="material-btn ripple-light coloured" href="?prop=&new=yes" id="new">add</a>
+        <div id="selection">
+          <span id="selectcount"></span>
+          <button type="button" class="material-btn icon ripple-light" id="remove"></button>
+        </div>
+      </div>
+      <a class="heading">
+        <button type="button" id="selectall" class="material-btn icon ripple-light"></button>
+        <span>Item name</span>
+        <span>Value</span>
+      </a>
+    </div>
+    <div id="editor">
+      <div class="navbar">
+        <a class="material-btn icon ripple-light" href="?"></a>
+        <span>localStorage manager</span>
+      </div>
+      <div class="container">
+        <div class="input-wrapper">
+          <label>Item name</label>
+          <input type="text" id="name" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+        </div>
+        <div class="textarea-wrapper" id="value">
+          <label>Item value</label>
+          <textarea autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"></textarea>
+        </div>
+        <div class="textarea-wrapper filled" id="jsoneditor">
+          <label>Item JSON</label>
+          <div class="editor">
+            sdfsd
+          </div>
+        </div>
+        <button type="button" class="material-btn raised ripple-dark" id="save">save</button>
+        <button type="button" class="material-btn ripple-light" id="usejson" disabled>use json editor</button>
+      </div>
+    </div>
+  </body>
+  <!-- MADE BY SEAN -->
+</html>

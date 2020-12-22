@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>/all/ - Almost Everything</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Links to almost all files on this site (since {DATE})"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../sheep3.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="../sheep3.js" charset="utf-8"></script>
+    <script src="./main.js" charset="utf-8"></script>
+    <script src="./cacher.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Almost everything</h1>
+    <p>Last updated {DATE}</p>
+    <div class="btn-wrapper"><a href="links/" class="button">Other people's pages</a><a href="localStorage/" class="button">Manage localStorage</a><button id="cache" class="button" disabled>Cache files</button></div>
+    <div class="btn-wrapper"><button id="collapse">Collapse all</button><button id="open">Open all</button></div>
+    <div class="btn-wrapper" id="checkboxes">Show:
+      <label><input type="checkbox" id='html' checked> HTML</label>
+      <label><input type="checkbox" id='img' checked> images</label>
+      <label><input type="checkbox" id='other' checked> everything else</label>
+    </div>
+    <div class="dir" id="files">{FILES}</div>
+  </body>
+  <!-- MADE BY SEAN -->
+</html>
